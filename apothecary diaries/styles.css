@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marcellus&family=Noto+Serif+SC:wght@200..900&display=swap');
+/*Globale stilregler*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Cormorant Garamond";
+    font-size: calc(1em + 0.5vw);
+}
+
+body{
+    background-color: #12100E;
+}
+
+img {
+    width: 100%;
+}
+
+/* Header og nav */
+
+header {
+    background-color: #12100E;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: thin solid #D9A441;
+}
+
+header h3 {
+    margin: 0;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    margin-right: 2rem;
+}
+
+header nav li a {
+    color: white;
+    font-family: "Marcellus", serif;
+    font-size: 0.7em;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.border-button {
+    display: inline-block;
+    border: 1px solid #D9A441;
+    padding: 1rem 2rem;
+    background: transparent;
+    color: #EBDFC2;
+    font-family: "Marcellus", serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#japanese {
+    display: inline-block;
+    background-color: #8A1F24;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    color:#D9A441;
+    margin-right: 0.5rem;
+    font-size: 1.1em;
+    font-family: "Noto Serif SC", serif;
+    align-self: center;
+}
+
+#hero {
+    background-color: #12100E;
+    color: white;
+    padding: 3rem 8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+#hero h4 {
+    color: #C9A15B;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+#hero i {
+    color: #D9A441
+}
+
+#hero h1 {
+    font-size: 2.9rem;
+    max-width: 100%;
+}
+
+#hero p {
+    color: #EBDFC2;
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    align-items: center;
+    max-width: 100%;
+    text-align: left;
+}
+
+#red-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #8A1F24;
+    color: #EBDFC2;
+    font-family: "Marcellus", serif;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.button-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 45rem;
+}
+
+#hero figure {
+    flex: 1;
+    max-width: 15rem;
+    background-color: #8A1F24;
+    border: 3px solid #D9A441;
+    border-radius: 14rem 14rem 0 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#hero figure img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    display: block;
+    object-position: center 2%;
+}
+
+#hero figure figcaption {
+    background-color: #8A1F24;
+    color: #EBDFC2;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Marcellus", serif;
+    font-size: 1.2rem;
+    border-top: 3px solid #D9A441;
+}
+
+#hero figure figcaption span:last-child {
+    font-family: "Noto Serif SC", serif;
+    color: #EBDFC2;
+}
+
+.text-banner {
+    background-color: #8A1F24;
+    color: #EBDFC2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.text-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.text-list li {
+    display: flex;
+    align-items: center;
+}
+
+.text-list li:not(:last-child)::after {
+    content: "◆";
+    margin-left: 2rem;
+    color: #EBDFC2;
+}
+    
